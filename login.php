@@ -14,6 +14,7 @@
             if (isset($_SESSION['error'])){
                 unset($_SESSION['error']);
             }
+            header("Location: index.php");
             
         }else{
             echo 'Sikertelen a bejelentkezés';
