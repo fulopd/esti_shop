@@ -31,6 +31,7 @@
     </head>
     <body>
         <?php
+        echo file_get_contents("html/menu_out.html");
         echo file_get_contents("html/login_form.html");
         if (isset($_SESSION['error'])){
             echo "<h2>{$_SESSION['error']}</h2>";
