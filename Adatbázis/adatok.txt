@@ -1,0 +1,4 @@
+Database: esti_shop
+Table : users
+User: esti_user
+Pass: esti_user
