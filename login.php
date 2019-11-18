@@ -17,26 +17,17 @@
             header("Location: index.php");
             
         }else{
-            echo 'Sikertelen a bejelentkezés';
+            echo 'Sikertelen a bejelentkezĂ©s';
             $_SESSION['error'] = "Helytelen belépési adatok";
             header("Location: login.php");
         }
     }
+    echo file_get_contents("html/header.html");
+    echo file_get_contents("html/menu_out.html");
+    echo file_get_contents("html/login_form.html");
+    if (isset($_SESSION['error'])){
+        echo "<h2>{$_SESSION['error']}</h2>";
+    }
+   echo file_get_contents("html/footer.html");
+
 ?>
-
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-    </head>
-    <body>
-        <?php
-        echo file_get_contents("html/menu_out.html");
-        echo file_get_contents("html/login_form.html");
-        if (isset($_SESSION['error'])){
-            echo "<h2>{$_SESSION['error']}</h2>";
-        }
-        ?>
-    </body>
-</html>
-

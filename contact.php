@@ -1,18 +1,5 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-    </head>
-    <body>
-        <h1>Itt lesz a kapcsolatok oldal</h1>
-        <?php
-        // put your code here
-        ?>
-    </body>
-</html>
+<?php
+    
+    echo file_get_contents("html/header.html");
+    echo "<h2>Kapcsolat lesz itt</h2>";
+    echo file_get_contents("html/footer.html");
