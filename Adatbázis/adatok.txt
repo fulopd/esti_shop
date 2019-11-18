@@ -1,4 +1,4 @@
-Database: esti_shop
+Database: esti_shop (adatbázist létre kell hozni és utána kell importálni)
 Table : users
-User: esti_user
+User: esti_user (ujre hozzá kell adni a táblához (hely: local jogogok: adat))
 Pass: esti_user
